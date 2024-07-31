@@ -1,13 +1,14 @@
 #!/bin/bash
 
-REPO="03_Final_Test.git"
+# Получение имени текущего каталога и формирование имени репозитория
+REPO="$(basename "$(pwd)").git"
 BRANCH="master"
 REMOTE1="origin"
 REMOTE2="mirror"
 GITHUB_URL="git@github.com:Koatia/$REPO"
 GITVERSE_URL="ssh://git@gitverse.ru:2222/Kostia/$REPO"
 DATE=$(date +'%Y-%m-%d %H:%M:%S')
-COMMIT_MESSAGE="Committed on $DATE"
+COMMIT_MESSAGE="committed on $DATE"
 
 # Функция для добавления удаленного репозитория, если он не существует
 add_remote() {
