@@ -1,17 +1,41 @@
 #!/bin/bash
 
+REPO="03_Final_Test.git"
+BRANCH="master"
+REMOTE1="origin"
+REMOTE2="mirror"
+GITHUB_URL="git@github.com:Koatia/$REPO"
+GITVERSE_URL="ssh://git@gitverse.ru:2222/Kostia/$REPO"
+DATE=$(date +'%Y-%m-%d %H:%M:%S')
+COMMIT_MESSAGE="Committed on $DATE"
+
+# Функция для добавления удаленного репозитория, если он не существует
+add_remote() {
+    if ! git remote | grep -q "$1"; then
+        git remote add "$1" "$2"
+    fi
+}
+
 # Добавление удаленных репозиториев
-git remote add origin git@github.com:Koatia/03_Final_Test.git;
-git remote add mirror ssh://git@gitverse.ru:2222/Kostia/03_Final_Test.git
+add_remote $REMOTE1 $GITHUB_URL
+add_remote $REMOTE2 $GITVERSE_URL
 
 # Пуш изменений в оба репозитория
-git push origin master; git push mirror master
+commands=(
+    "git add ."
+    "git commit -m \"$COMMIT_MESSAGE\""
+    "git push $REMOTE1 $BRANCH"
+    "git push $REMOTE2 $BRANCH"
+    "git status"
+    "git log --oneline --all --graph"
+)
+
+for command in "${commands[@]}"; do
+    echo
+    echo "*****************************************"
+    echo "Выполняется $command"
+    eval $command
+done
 
 echo '--------'
-
-git status
-
-echo '--------'
-
-echo "Обновление завершено, нажмите ENTER"
-read tem
+echo "Обновление завершено"
