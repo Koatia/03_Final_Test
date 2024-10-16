@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Итоговая аттестация</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Итоговая аттестация</h1>
+</header>
+<h2 id="task-1">Task 1</h2>
+<p>Подведите итоги эксперимента в экселе по следующим данным: <a
+href="https://drive.google.com/file/d/1XYk_NrBvrpx9IEA-_0gSndcINuoGudW6/view">ab_stats.csv</a>.</p>
+<ul>
+<li>Стат значимо ли отличается ARPPU в двух группах?</li>
+<li>Какие рекомендации дадите менеджеру?</li>
+</ul>
+<p><strong>Решение:</strong></p>
+<p>Файл содержит данные с колонками:</p>
+<ul>
+<li><code>revenue</code>: выручка, полученная от пользователя.</li>
+<li><code>num_purchases</code>: количество покупок, совершенных
+пользователем.</li>
+<li><code>purchase</code>: факт покупки (0 или 1).</li>
+<li><code>ab_group</code>: группа A/B-теста (A или B).</li>
+<li><code>av_site visit</code>: среднее время на сайте (вероятно,
+среднее время посещения).</li>
+</ul>
+<p>ARPPU (Average Revenue Per Paying User) для каждой группы
+рассчитывается как:</p>
+<p><span class="math inline">\(ARPPU =
+\frac{\text{revenue}}{\text{purchase &gt; 0}}\)</span></p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>total_revenue paying_users ARPPU</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>ab_group</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>A 4786.807972 256 18.698469</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>B 2892.735789 234 12.362119</span></code></pre></div>
+<p>Теперь необходимо провести статистический тест (например, t-тест) для
+проверки значимых различий между группами. Для вычисления T-статистики и
+P-значения используем <strong>t-тест для двух независимых
+выборок</strong>:</p>
+<ol type="1">
+<li><strong>Формулировка гипотез:</strong>
+<ul>
+<li>Нулевая гипотеза (<span class="math inline">\(H_0\)</span>): Средние
+значения <code>ARPPU</code> в группах <code>A</code> и <code>B</code> не
+различаются.</li>
+<li>Альтернативная гипотеза (<span class="math inline">\(H_1\)</span>):
+Средние значения <code>ARPPU</code> в группах <code>A</code> и
+<code>B</code> отличаются.</li>
+</ul></li>
+<li><strong>T-тест</strong>: Используем тест на разницу средних двух
+независимых выборок. Основные параметры для t-теста:
+<ul>
+<li><span class="math inline">\(\text{T-статистика}\)</span>: показатель
+величины разницы между двумя средними значениями.</li>
+<li><span class="math inline">\(\text{P-значение}\)</span>: вероятность
+того, что разница между группами возникла случайно. Если <span
+class="math inline">\(p &lt; 0.05\)</span>, разница считается
+статистически значимой.</li>
+</ul></li>
+</ol>
+<p>Формула для <code>t-статистики</code>:</p>
+<p><span class="math inline">\(T = \frac{\bar{X}_1 -
+\bar{X}_2}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}\)</span></p>
+<p>Где:</p>
+<ul>
+<li><span class="math inline">\(\bar{X}_1\)</span> и <span
+class="math inline">\(\bar{X}_2\)</span> — средние значения ARPPU для
+групп A и B.</li>
+<li><span class="math inline">\(s_1^2\)</span> и <span
+class="math inline">\(s_2^2\)</span> — дисперсии (variance) в группах A
+и B.</li>
+<li><span class="math inline">\(n_1\)</span> и <span
+class="math inline">\(n_2\)</span> — количество наблюдений в каждой
+группе.</li>
+</ul>
+<h3 id="p-значение">P-значение:</h3>
+<p>После расчета t-статистики используем распределение Стьюдента
+(t-distribution), чтобы получить p-значение, которое указывает на
+вероятность того, что различие между группами является случайным.</p>
+<h3 id="вычисления-в-нашем-случае">Вычисления в нашем случае:</h3>
+<ol type="1">
+<li><strong>Средние значения</strong> для групп A и B: это были
+фактические ARPPU.</li>
+<li><strong>T-статистика</strong>: 1.13</li>
+<li><strong>P-значение</strong>: 0.26</li>
+</ol>
+<p>T-статистика 1.13 указывает на небольшую разницу между группами, но
+p-значение 0.26 (больше 0.05) означает, что эта разница статистически
+незначима.</p>
+<p>Таким образом, можно сказать, что различие ARPPU между группами A и B
+могло возникнуть случайно, и оно не является доказанным на уровне
+значимости 5%.</p>
+<p><strong>Рекомендации менеджеру</strong>: На основе текущих данных и
+анализа можно сделать вывод, что изменение (тестирование группы B) не
+привело к значимому изменению выручки на пользователя. Рекомендуется
+проанализировать другие метрики или провести более длительное
+тестирование для получения более точных результатов.</p>
+<p><a href="ab_test.xlsx">Excel-файл</a></p>
+<h2 id="task-2">Task 2</h2>
+<p>Мы хотим провести А/Б-тест для трех источников трафика. Нынешняя
+конверсия равна 5%, мы ожидаем прирост в 0,2%. Уровень доверия 97% и
+уровень мощности 87%. Всего на наш продукт заходит 40 000 пользователей
+в месяц.</p>
+<p>За сколько дней мы сможем протестировать гипотезу? И что вы можете
+посоветовать по результатам подсчета?</p>
+<p><strong>Решение:</strong></p>
+<p>Для расчета количества дней нам нужно:</p>
+<ul>
+<li>Конверсия текущая: <span class="math inline">\(5\%\)</span> (или
+<span class="math inline">\(0.05\)</span>).</li>
+<li>Ожидаемый прирост: <span class="math inline">\(0.2\%\)</span> (или
+<span class="math inline">\(0.002\)</span>).</li>
+<li>Уровень доверия: <span class="math inline">\(97\%\)</span> — это
+означает, что <span class="math inline">\(\alpha = 1 - 0.97 =
+0.03\)</span>.</li>
+<li>Мощность теста: <span class="math inline">\(87\%\)</span> — это
+значит, что <span class="math inline">\(\beta = 1 - 0.87 =
+0.13\)</span>.</li>
+<li>Количество пользователей в месяц: <span
+class="math inline">\(40,000\)</span>.</li>
+</ul>
+<p>Используем статистические методы для расчета необходимого размера
+выборки для A/B-теста, а затем определим, сколько дней потребуется для
+достижения этого объема выборки с данным потоком трафика.</p>
+<p>Расчет сделан в python <a href="task_2.py">-&gt; file
+task_2.py</a></p>
+<p><code>effect_size</code> — рассчитываем эффект на основе разницы
+между текущей и ожидаемой конверсией с помощью
+<code>proportion_effectsize</code>.</p>
+<p><code>solve_power</code> — используем для расчета необходимого
+размера выборки на основе уже известного <code>effect_size</code>.</p>
+<p><code>total_sample_size</code> — это общее количество пользователей,
+необходимое для обеих групп.</p>
+<p><code>days_needed</code> — количество дней, необходимых для
+тестирования, исходя из количества пользователей в день.</p>
+<p>Расчет показывает следующие результаты:</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>Необходимое количество пользователей для каждой группы: 262946.43</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>Общее количество пользователей: 525892.86</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>Необходимое количество дней для тестирования: 394.42</span></code></pre></div>
+<h3
+id="с-учетом-расчетов-можно-сделать-следующие-выводы-и-рекомендации">С
+учетом расчетов можно сделать следующие выводы и рекомендации:</h3>
+<ol type="1">
+<li><strong>Длительность теста</strong>:
+<ul>
+<li>Общее количество пользователей, необходимых для тестирования,
+составляет около <strong>525,893</strong>.</li>
+<li>При текущем трафике в <strong>40,000 пользователей в месяц</strong>
+тест будет длиться примерно <strong>394 дня</strong>, что более чем
+год.</li>
+</ul></li>
+<li><strong>Малый прирост конверсии</strong>:
+<ul>
+<li>Ожидаемый прирост конверсии составляет всего <strong>0.2%</strong>.
+Это очень незначительное изменение, что требует большого объема данных
+для того, чтобы надежно подтвердить статистическую значимость
+результатов.</li>
+</ul></li>
+<li><strong>Высокий уровень доверия и мощности</strong>:
+<ul>
+<li>Мы задали довольно высокие параметры для уровня доверия (97%) и
+мощности теста (87%). Это обеспечивает точные и надежные результаты, но
+требует значительно большего объема данных.</li>
+</ul></li>
+</ol>
+<h3 id="рекомендации">Рекомендации:</h3>
+<ol type="1">
+<li><strong>Оптимизация дизайна теста</strong>:
+<ul>
+<li>Рассмотреть возможность <strong>снижения уровня доверия</strong>
+(например, до 95%) и/или <strong>мощности</strong> теста (например, до
+80%). Это уменьшит необходимое количество данных и сократит срок
+теста.</li>
+</ul></li>
+<li><strong>Увеличение трафика</strong>:
+<ul>
+<li>Если возможно, увеличить приток пользователей на сайт с других
+источников, что позволит провести тест быстрее. Например, привлечение
+большего количества пользователей за счет маркетинговых активностей
+поможет завершить тест за меньшее время.</li>
+</ul></li>
+<li><strong>Целесообразность такого теста</strong>:
+<ul>
+<li>Поскольку тест будет длиться более года с текущим уровнем трафика,
+нужно задаться вопросом, насколько важен этот тест для бизнеса. Стоит
+рассмотреть альтернативные варианты тестирования с меньшим уровнем
+точности или поиска более значительного прироста конверсии, чтобы
+сократить срок тестирования.</li>
+</ul></li>
+<li><strong>Другие показатели</strong>:
+<ul>
+<li>Помимо конверсии, рассмотреть возможность тестирования других
+метрик, которые могут дать более быстрые и значимые результаты.
+Например, измерение средней выручки на пользователя (ARPU), времени на
+сайте или других факторов, которые могут быстрее показать
+результаты.</li>
+</ul></li>
+</ol>
+<p>В целом, такой длительный тест может быть не очень эффективным,
+поэтому стоит рассмотреть возможности оптимизации параметров или
+проведения теста на других метриках.</p>
+<hr />
+<h2 id="task-3">Task 3</h2>
+<p>Допустим в задаче нет проблемы с количеством посетителей на сайт,
+тогда подведите результаты тестирования, если у нас следующие результаты
+по количеству конверсии:</p>
+<ul>
+<li>1 - 25000</li>
+<li>2 - 30000</li>
+<li>3 - 32000</li>
+</ul>
+<p><strong>Решение:</strong></p>
+<p>Для каждого источника нужно рассчитать фактическую конверсию и
+провести тест для определения статистически значимых различий.</p>
+<p>Рассчитанные конверсии для трёх источников (<a href="task_3.py">с
+использованием python</a>):</p>
+<ul>
+<li>Источник 1: 62.5% (25 000 конверсий).</li>
+<li>Источник 2: 75% (30 000 конверсий).</li>
+<li>Источник 3: 80% (32 000 конверсий).</li>
+</ul>
+<p>Эти конверсии значительно выше текущей базовой конверсии в 5%.
+Проверим статистическую значимость различий между этими источниками.
+Выполним парные статистические тесты (<a href="task_3.py">с
+использованием python</a>) для сравнения конверсий между
+источниками.</p>
+<p>Результаты статистического анализа:</p>
+<ol type="1">
+<li><strong>Сравнение источников 1 и 2</strong>:
+<ul>
+<li>Z-статистика: -38.14</li>
+<li>P-значение: &lt; 0.0001</li>
+</ul></li>
+<li><strong>Сравнение источников 2 и 3</strong>:
+<ul>
+<li>Z-статистика: -16.93</li>
+<li>P-значение: &lt; 0.0001</li>
+</ul></li>
+</ol>
+<p>Оба сравнения показывают, что p-значения меньше 0.0001, что означает,
+что различия между конверсиями источников статистически значимы.</p>
+<h3 id="рекомендации-1">Рекомендации:</h3>
+<p>Результаты показывают значимые различия в конверсиях между всеми
+источниками. Это означает, что конверсия каждого следующего источника
+статистически лучше предыдущего. На основе этих данных можно сделать
+вывод, что источники трафика существенно отличаются по эффективности, и
+стоит рассмотреть перераспределение бюджета в пользу более конверсионных
+источников.</p>
+<hr />
+<h2 id="task-4">Task 4</h2>
+<p>Вы решили сравнивать метрику CPA в двух группах. Размер выборки -
+2350 элементов в каждой группе. Для проверки нормальности распределения
+на выборке в 2350 наблюдений применили, критерий Шапиро-Уилка и получили
+p-value, равный 0.00002, alpha = 5%. Какой бы вывод мы могли сделать в
+данном случае? В этом случае какой статистический критерий для проверки
+первоначальной гипотезы тут лучше всего подойдёт и почему?</p>
+<p><strong>Решение:</strong></p>
+<p>В данном случае, критерий Шапиро-Уилка был применён для проверки
+нормальности распределения метрики CPA в двух группах.</p>
+<h3 id="выводы-из-теста-шапиро-уилка">Выводы из теста Шапиро-Уилка:</h3>
+<ol type="1">
+<li><strong>Нулевая гипотеза</strong> теста Шапиро-Уилка гласит, что
+выборка <strong>имеет нормальное распределение</strong>.</li>
+<li><span class="math inline">\(p\)</span>-значение <span
+class="math inline">\(0.00002\)</span> значительно меньше уровня
+значимости <span class="math inline">\(\alpha = 0.05\)</span>, что
+означает, что мы <strong>отвергаем нулевую гипотезу</strong>.</li>
+<li>Таким образом, на основании теста можно сделать вывод, что
+распределение метрики CPA <strong>не является нормальным</strong>.</li>
+</ol>
+<h3 id="какой-статистический-критерий-выбрать">Какой статистический
+критерий выбрать?</h3>
+<p>Так как данные <strong>не имеют нормального распределения</strong>,
+использование параметрических тестов, таких как t-тест для сравнения
+средних, не будет корректным. Вместо этого лучше использовать
+<strong>непараметрические критерии</strong>, которые не предполагают
+нормальности распределений.</p>
+<h4 id="подходящие-критерии">Подходящие критерии:</h4>
+<ol type="1">
+<li><strong>Критерий Манна-Уитни (U-тест Манна-Уитни)</strong>:
+<ul>
+<li>Это непараметрический тест, который используется для сравнения двух
+независимых групп.</li>
+<li>Он проверяет разницу между медианами двух групп, не требуя
+предположений о нормальности распределения данных.</li>
+<li>Этот тест хорошо подходит для сравнения CPA в двух группах, так как
+распределение метрики не является нормальным.</li>
+</ul></li>
+<li><strong>Почему Манна-Уитни</strong>:
+<ul>
+<li>Данный тест устойчив к выбросам и справляется с ситуациями, когда
+данные сильно отклоняются от нормальности.</li>
+<li>Он широко используется в случае, когда выборки велики, но их
+распределение отличается от нормального.</li>
+</ul></li>
+</ol>
+<h3 id="итог">Итог:</h3>
+<p>В случае, если распределение CPA в обеих группах не является
+нормальным, критерий <strong>Манна-Уитни</strong> будет наиболее
+подходящим для проверки гипотезы о различии CPA между двумя
+группами.</p>
+<hr />
+<h2 id="task-5">Task 5</h2>
+<p>Мы провели АБ-тест на увеличение average timespent per user. По
+итогам тестирования мы получили следующие данные. Является ли результат
+статистически значимым с уровнем доверия 80%? Какую версию мы выкатим на
+продакшн?</p>
+<ul>
+<li><ol type="A">
+<li>Средняя - 360, отклонение - 40, количество - 9802</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>Средняя - 352, отклонение - 58, количество - 9789</li>
+</ol></li>
+</ul>
+<p><strong>Решение:</strong></p>
+<p>Чтобы ответить на вопрос, является ли результат статистически
+значимым, и какую версию выкатывать на продакшн, нужно провести
+<strong>t-тест для двух независимых выборок</strong>. T-тест поможет
+понять, есть ли статистически значимая разница между средним временем на
+сайте на одного пользователя в группах A и B.</p>
+<ol type="1">
+<li><strong>Гипотезы</strong>:
+<ul>
+<li>Нулевая гипотеза (<span class="math inline">\(H_0\)</span>): Среднее
+время на сайте на пользователя в группах A и B одинаковое.</li>
+<li>Альтернативная гипотеза (<span class="math inline">\(H_1\)</span>):
+Среднее время на сайте на пользователя в группах A и B отличается.</li>
+</ul></li>
+<li><strong>Уровень доверия и уровень значимости</strong>:
+<ul>
+<li>Уровень доверия: 80% (что соответствует уровню значимости <span
+class="math inline">\(\alpha = 0.20\)</span>).</li>
+<li>Это означает, что мы принимаем вероятность ошибки первого рода
+(ложноположительное срабатывание) в 20%.</li>
+</ul></li>
+<li><strong>Использование двухвыборочного t-теста</strong>:
+<ul>
+<li>У нас есть средние, стандартные отклонения и количество наблюдений
+для каждой группы.</li>
+<li>Мы можем использовать двухвыборочный t-тест с допущением о неравных
+дисперсиях (тест Уэлча), так как стандартные отклонения в группах
+разные.</li>
+</ul></li>
+</ol>
+<p>Расчеты для этого теста выполнены в <a
+href="task_5.py">python</a>.</p>
+<p>Результаты t-теста:</p>
+<ul>
+<li>T-статистика: 11.24</li>
+<li>P-значение: <span class="math inline">\(3.4 \times
+10^{-29}\)</span>, что значительно меньше уровня значимости <span
+class="math inline">\(\alpha = 0.20\)</span>.</li>
+</ul>
+<h3 id="вывод">Вывод:</h3>
+<p>P-значение показывает, что разница между группами A и B
+<strong>статистически значима</strong> на уровне доверия 80%. Это
+значит, что среднее время на сайте в группе A (360 секунд) действительно
+больше, чем в группе B (352 секунды), и эта разница не случайна.</p>
+<h3 id="какую-версию-выкатывать-на-продакшн">Какую версию выкатывать на
+продакшн?</h3>
+<p>Поскольку группа A показывает более высокое среднее время на сайте
+(360 секунд против 352 секунд в группе B), и разница является
+статистически значимой, <strong>версию A стоит выкатывать на
+продакшн</strong>, так как она демонстрирует лучшее значение целевой
+метрики (average timespent per user).</p>
+<hr />
+<h2 id="task-6">Task 6</h2>
+<p>Создайте техническую архитектуру проекта по А/B тестированию продукта
+он-лайн кинотеатра с учетом кросс-девайс аналитики по следующей
+гипотезе: Если договориться с банком о 99% кэшбэке на подписку первого
+месяца, то это повысит конверсию в подписку на 30%, благодаря
+упрощенному принятию решения со стороны пользователя. На схеме
+необходимо отобразить:</p>
+<ol type="1">
+<li>Управленческий процесс по договоренностям с внешними партнерами</li>
+<li>Архитектуру данных с указанием систем, из которых будем скачивать
+данные</li>
+<li>Внутрикомандное взаимодействие</li>
+</ol>
+<p><strong>Решение:</strong></p>
+<p>Создание технической архитектуры для A/B-тестирования гипотезы в
+онлайн-кинотеатре с кросс-девайс аналитикой включает несколько ключевых
+блоков: управленческий процесс, архитектуру данных и взаимодействие
+команд.</p>
+<h3
+id="управленческий-процесс-по-договоренностям-с-внешними-партнерами">1.
+<strong>Управленческий процесс по договоренностям с внешними
+партнерами</strong>:</h3>
+<ul>
+<li><strong>Цель</strong>: Договориться с банком о предоставлении 99%
+кэшбэка на подписку первого месяца.</li>
+<li>Включает взаимодействие с менеджером, юридическим отделом и
+банком.</li>
+<li>Основные шаги:
+<ul>
+<li>Переговоры с банком о кэшбэке.</li>
+<li>Оформление юридического соглашения о кэшбэке.</li>
+<li>Интеграция с банком (API для отслеживания транзакций кэшбэка).</li>
+<li>Совместная маркетинговая кампания для информирования клиентов.</li>
+</ul></li>
+</ul>
+<h3 id="архитектура-данных-с-указанием-систем">2. <strong>Архитектура
+данных с указанием систем</strong>:</h3>
+<ul>
+<li><strong>Источники данных</strong>:
+<ul>
+<li><strong>CRM системы онлайн-кинотеатра</strong>: данные о
+пользователях, подписках, отменах.</li>
+<li><strong>Банк/Платежная система</strong>: данные по транзакциям
+(подтверждение подписки с кэшбэком).</li>
+<li><strong>Кросс-девайс аналитика</strong>:
+<ul>
+<li><strong>DMP</strong> (Data Management Platform): управление
+пользователями по девайсам.</li>
+<li><strong>Mobile SDK и Web Tracking</strong>: отслеживание действий
+пользователей на всех устройствах.</li>
+</ul></li>
+<li><strong>Система управления контентом</strong>: данные о контенте, с
+которым взаимодействуют пользователи.</li>
+<li><strong>ETL процесс</strong> (Extract, Transform, Load):</li>
+<li>Из всех систем данные собираются в <strong>Data Warehouse
+(DWH)</strong> для анализа.</li>
+<li><strong>Аналитическая платформа</strong> для A/B-тестирования
+(например, Google Analytics, Mixpanel, Amplitude).</li>
+</ul></li>
+</ul>
+<h3 id="внутрикомандное-взаимодействие">3. <strong>Внутрикомандное
+взаимодействие</strong>:</h3>
+<ul>
+<li><strong>Продуктовая команда</strong>: Разработка гипотезы,
+координация A/B-теста, настройка взаимодействия с партнёрами.</li>
+<li><strong>Техническая команда</strong>: Настройка интеграций с
+внешними партнёрами, разработка кросс-девайс аналитики, управление
+данными.</li>
+<li><strong>Аналитики</strong>: Проведение анализа данных, построение
+A/B-тестов, анализ конверсий, подготовка отчетов.</li>
+<li><strong>Маркетинговая команда</strong>: Совместная кампания с банком
+по продвижению кэшбэка.</li>
+<li><strong>Команда поддержки клиентов</strong>: Обработка запросов
+пользователей по вопросам кэшбэка и подписки.</li>
+</ul>
+<p>На схеме архитектуры для проекта A/B-тестирования в онлайн-кинотеатре
+с учетом кросс-девайс аналитики и взаимодействия с партнёром (банком)
+для кэшбэка представлены:</p>
+<ol type="1">
+<li>Управленческий процесс с внешними партнёрами.</li>
+<li>Архитектура данных и ETL-процессы с различными системами (CRM,
+платёжные системы, мобильные SDK и веб-трекинг).</li>
+<li>Внутрикомандное взаимодействие (продуктовая команда, техническая
+команда, аналитики, маркетинг и поддержка клиентов).</li>
+</ol>
+<figure>
+<img src="Schema_1.png" alt="Схема" />
+<figcaption aria-hidden="true">Схема</figcaption>
+</figure>
+</body>
+</html>
